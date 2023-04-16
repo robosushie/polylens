@@ -1,4 +1,4 @@
-# PolyLens
+# PolyLens - [In Progress]
 
 PolyLens is a sleek utility app designed for effortlessly viewing 3D assets. With key insights on performance, including FPS, vertex and triangle counts, memory usage, and draw calls, PolyLens provides an optimized experience for exploring your 3D creations.
 
