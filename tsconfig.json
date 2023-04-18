@@ -18,6 +18,7 @@
       "@/main/*": ["src/main/*"],
       "@/renderer/*": ["src/renderer/*"],
       "@/components/*": ["src/renderer/components/*"],
+      "@/lib/*": ["src/renderer/lib/*"],
       "@/styles/*": ["src/renderer/styles/*"],
       "@/views/*": ["src/renderer/views/*"]
     }

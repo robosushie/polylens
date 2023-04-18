@@ -23,6 +23,7 @@ export const rendererConfig: Configuration = {
       "@/config": path.resolve(__dirname, "config"),
       "@/renderer": path.resolve(__dirname, "src/renderer"),
       "@/components": path.resolve(__dirname, "src/renderer/components"),
+      "@/lib": path.resolve(__dirname, "src/renderer/lib"),
       "@/styles": path.resolve(__dirname, "src/renderer/styles"),
       "@/views": path.resolve(__dirname, "src/renderer/views"),
     },

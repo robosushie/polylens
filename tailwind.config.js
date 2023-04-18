@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-import { APP_COLOR_SCHEME } from "./config/color-config";
+import { APP_COLOR_SCHEME } from "./config/color-scheme";
 
 module.exports = {
   content: ["./src/renderer/**/*.{js,jsx,ts,tsx}"],

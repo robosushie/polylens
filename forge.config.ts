@@ -20,7 +20,6 @@ const config: ForgeConfig = {
   plugins: [
     new WebpackPlugin({
       mainConfig,
-      // devContentSecurityPolicy: `default-src 'none'`,
       devContentSecurityPolicy: `default-src 'self' 'unsafe-inline' data: file: blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' data:; worker-src blob:; child-src blob:;`,
       renderer: {
         config: rendererConfig,

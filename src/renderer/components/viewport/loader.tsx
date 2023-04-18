@@ -1,28 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useGLTF } from "@react-three/drei";
+
+import * as THREE from "three";
 import { useThree } from "@react-three/fiber";
+import loader from "@/lib/loaders/loaders";
+import { dropEventListener } from "@/lib/drop-file";
 
-const Loader: React.FC<{ path: string }> = ({ path }) => {
-  //   const { scene } = useThree();
-  //   const getModel = async (path: any) => {
-  //     console.log("model sent");
-  //     const gltfData = await window.electronAPI.load_gltf(path);
-  //     console.log("model received", gltfData);
-  //     // const gltf = {
-  //     //   json: gltfData.json,
-  //     //   buffers: gltfData.buffers.map(
-  //     //     (bufferData: any) => new Uint8Array(bufferData).buffer
-  //     //   ),
-  //     // };
-  //     // scene.add(JSON.parse(model.scene));
-  //   };
-  //   useEffect(() => {
-  //     getModel(path);
-  //   }, []);
-
-  const gltf = useGLTF(path);
-
-  return <primitive object={gltf.scene} />;
+const Loader: React.FC<{}> = () => {
+  const { scene } = useThree();
+  useEffect(() => {
+    dropEventListener(scene, loader);
+  }, []);
+  return null;
 };
 
 export default Loader;
