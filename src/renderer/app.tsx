@@ -1,5 +1,6 @@
 import React from "react";
 import Viewport from "./views/viewport";
+import { Stats } from "@react-three/drei";
 
 const App: React.FC<{}> = () => {
   return (
